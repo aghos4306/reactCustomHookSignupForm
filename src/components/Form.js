@@ -1,10 +1,16 @@
 import React from 'react';
 import FormSignUp from './FormSignUp';
+import FormSuccess from './FormSuccess';
 
 const Form = () => {
+    const [isSubmitted, setIsSubmitted] = React.useState(false);
+    function submitForm() {
+        setIsSubmitted(true);
+    }
+
     return (
         <div>
-            <FormSignUp />
+            {!isSubmitted ? <FormSignUp submitForm={submitForm} /> : <FormSuccess />}
         </div>
     )
 }
