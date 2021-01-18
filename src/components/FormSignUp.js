@@ -7,7 +7,8 @@ const FormSignUp = () => {
                 <h1>Get Started with us today by creating an account</h1>
                 <div className="form-inputs">
                     <label htmlFor="username" className="form-label">Username</label>
-                    <input type="text" name="username" className="form-input"  id="username" placeholder="Pls Enter Your Username" />
+                    <input type="text" name="username" className="form-input"  id="username" placeholder="Pls Enter Your Username" 
+                    />
                 </div>
                 <div className="form-inputs">
                     <label htmlFor="email" className="form-label">Email</label>
